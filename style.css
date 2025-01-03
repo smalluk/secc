@@ -44,7 +44,7 @@
   --size-900: 5rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   :root {
     --font-size-body: var(--font-size-500);
     --font-size-primary-heading: var(--font-size-900);
@@ -210,14 +210,19 @@ p[data-width="wide"] {
   color: var(--clr-accent-400);
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
+  .primary-header[data-overlay] {
+    position: relative;
+    z-index: 999;
+  }
+
   .primary-navigation {
     display: none;
     position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     max-width: 25rem;
-    margin-left: auto;
+    margin-inline: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
@@ -316,7 +321,7 @@ input:where([type="text"], [type="email"]) {
   padding: var(--size-300) var(--size-400);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .primary-footer-wrapper {
     grid-template-areas: 'logo-social nav form';
   }
@@ -328,7 +333,7 @@ input:where([type="text"], [type="email"]) {
 }
 
 
-@media (max-width: 50em){
+@media (max-width: 47em){
   .primary-footer-wrapper > * {
     margin-inline: auto;
     }
@@ -365,7 +370,7 @@ input:where([type="text"], [type="email"]) {
   fill: var(--clr-accent-400);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .social-list {
     display: flex;
     gap: var(--size-300);
@@ -383,7 +388,7 @@ input:where([type="text"], [type="email"]) {
   text-align: center;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .cta {
     text-align: left;
   }
@@ -508,7 +513,7 @@ input:where([type="text"], [type="email"]) {
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .slider > * {
     width: 35%;
   }
@@ -554,6 +559,36 @@ input:where([type="text"], [type="email"]) {
   background: var(--clr-accent-400);
 }
 
+/* image with blob bg */
+
+
+
+@media (max-width: 47em) {
+  .hero__image {
+    order: -1;
+  }
+}
+
+.hero__image::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 50%;
+  max-height: 70dvh;
+  aspect-ratio: 1 / 1.2;
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  /* border: 1px solid red; */
+}
+
+@media (min-width: 47em) {
+  .hero__image::before {
+    width: 45%;
+  }
+}
 
 /* Utility classes */
 
@@ -630,11 +665,15 @@ input:where([type="text"], [type="email"]) {
   margin-block-end: var(--size-700);
 }
 
+.mx-auto {
+  margin-inline: auto;
+}
+
 .display-sm-none{
   display: none;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .display-md-inline-flex {
     display: inline-flex;
   }
@@ -652,7 +691,7 @@ input:where([type="text"], [type="email"]) {
   gap: 1rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -667,7 +706,7 @@ input:where([type="text"], [type="email"]) {
   justify-self: end;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .justify-self-end-md {
     justify-self: end;
   }
@@ -685,7 +724,7 @@ input:where([type="text"], [type="email"]) {
   text-align: center;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
   .text-center-sm-only {
     text-align: center;
   }
