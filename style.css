@@ -805,3 +805,15 @@ input:where([type="text"], [type="email"]) {
     margin-inline: auto;
   }
 }
+
+.svg-container {
+  background-color: #285c4d;
+  padding: 10px; /* Optional padding */
+  display: block; /* Or block, depending on your layout needs */
+}
+
+/* If you need to control the size of the SVG */
+.svg-container svg {
+  width: 100%; /* Or a specific width */
+  height: auto; /* Maintain aspect ratio */
+}
