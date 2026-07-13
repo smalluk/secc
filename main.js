@@ -9,17 +9,20 @@ navToggle.addEventListener('click', () => {
 })
 
 
-const slider = new A11YSlider(document.querySelector(".slider"), {
-  adaptiveHeight: false,
-  dots: true,
-  centerMode: true,
-  arrows: false,
-  responsive: {
-    480: {
-      dots: true, // dots enabled 1280px and up
+const sliderElement = document.querySelector(".slider");
+if (sliderElement) {
+  const slider = new A11YSlider(sliderElement, {
+    adaptiveHeight: false,
+    dots: true,
+    centerMode: true,
+    arrows: false,
+    responsive: {
+      480: {
+        dots: true, // dots enabled 1280px and up
+      },
     },
-  },
-});
+  });
+}
 
 // Array of image URLs
 const images = [
@@ -53,4 +56,7 @@ function getRandomImage() {
 }
 
 // Set the src attribute of the image element
-document.getElementById('randomImage').src = getRandomImage();
+const randomImageElement = document.getElementById('randomImage');
+if (randomImageElement) {
+  randomImageElement.src = getRandomImage();
+}

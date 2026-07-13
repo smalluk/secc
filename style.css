@@ -817,3 +817,224 @@ input:where([type="text"], [type="email"]) {
   width: 100%; /* Or a specific width */
   height: auto; /* Maintain aspect ratio */
 }
+
+/* ==========================================
+   Sponsorship Page Grid, Cards & Form
+   ========================================== */
+
+.sponsorship-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--size-600);
+  margin-top: var(--size-600);
+}
+
+.sponsor-card {
+  background-color: white;
+  border: 1px solid rgba(18, 27, 11, 0.08);
+  border-radius: var(--size-200);
+  padding: var(--size-600);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.sponsor-card__header {
+  border-bottom: 1px solid rgba(18, 27, 11, 0.08);
+  padding-bottom: var(--size-400);
+  margin-bottom: var(--size-400);
+}
+
+.sponsor-card__badge {
+  display: inline-block;
+  background-color: var(--clr-accent-100);
+  color: var(--clr-primary-400);
+  font-size: var(--font-size-300);
+  font-weight: var(--font-weight-bold);
+  padding: 0.25em 0.75em;
+  border-radius: 100vw;
+  margin-bottom: var(--size-200);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sponsor-card__title {
+  color: var(--clr-primary-400);
+  font-size: var(--font-size-600);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--size-100);
+}
+
+.sponsor-card__price {
+  font-size: var(--font-size-700);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-accent-400);
+  margin-top: var(--size-200);
+  display: flex;
+  align-items: baseline;
+}
+
+.sponsor-card__price-period {
+  font-size: var(--font-size-300);
+  font-weight: var(--font-weight-regular);
+  opacity: 0.7;
+  margin-left: var(--size-100);
+}
+
+.sponsor-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-300);
+  flex-grow: 1; /* Pushes button/footer to bottom */
+}
+
+.sponsor-card__feature {
+  display: flex;
+  gap: var(--size-200);
+  font-size: var(--font-size-400);
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.sponsor-card__feature::before {
+  content: "✓";
+  color: var(--clr-accent-300);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+/* Highlighted (Gold) card */
+.sponsor-card--highlighted {
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+  border: none;
+  box-shadow: 0 10px 20px -5px rgba(56, 81, 49, 0.3);
+}
+
+.sponsor-card--highlighted .sponsor-card__header {
+  border-bottom-color: rgba(224, 242, 233, 0.2);
+}
+
+.sponsor-card--highlighted .sponsor-card__badge {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-400);
+}
+
+.sponsor-card--highlighted .sponsor-card__title {
+  color: var(--clr-neutral-100);
+}
+
+.sponsor-card--highlighted .sponsor-card__price {
+  color: white;
+}
+
+.sponsor-card--highlighted .sponsor-card__feature::before {
+  color: var(--clr-neutral-100);
+}
+
+/* Form Styles */
+.sponsorship-form-section {
+  background-color: var(--clr-neutral-200);
+  border-radius: var(--size-200);
+}
+
+.sponsorship-form-container {
+  max-width: 650px;
+  margin-inline: auto;
+}
+
+.sponsorship-form {
+  display: grid;
+  gap: var(--size-500);
+  background-color: white;
+  padding: var(--size-700);
+  border-radius: var(--size-100);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.form-group {
+  display: grid;
+  gap: var(--size-200);
+  text-align: left;
+}
+
+.form-label {
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--clr-primary-400);
+  font-size: var(--font-size-400);
+}
+
+.form-control {
+  font-family: inherit;
+  font-size: var(--font-size-400);
+  padding: var(--size-300) var(--size-400);
+  border: 1px solid rgba(18, 27, 11, 0.2);
+  border-radius: var(--size-100);
+  background-color: white;
+  color: var(--clr-primary-400);
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--clr-accent-400);
+  box-shadow: 0 0 0 3px rgba(56, 81, 49, 0.15);
+}
+
+.form-control::placeholder {
+  color: var(--clr-accent-100);
+  opacity: 0.8;
+}
+
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23385131' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right var(--size-400) center;
+  background-size: 1.25em;
+  padding-right: var(--size-700);
+}
+
+textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.sponsorship-form .button {
+  justify-content: center;
+  margin-top: var(--size-300);
+}
+
+/* Success notification message */
+.form-status {
+  padding: var(--size-400);
+  border-radius: var(--size-100);
+  margin-bottom: var(--size-400);
+  display: none;
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+}
+
+.form-status--success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+.form-status--error {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
