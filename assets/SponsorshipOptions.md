@@ -1,4 +1,3 @@
-Packages for review by Sponsorship Working Group
 Matchball Sponsor - £25
 Sponsor the purchase of a match ball for our 1st XI or 2nd XI home / away fixtures and
 receive pre & post-match social media posts highlighting your support, including

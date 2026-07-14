@@ -1,371 +1,395 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sherburn Eversley Cricket Club</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-  </head>
-  <body>
-    <header class="primary-header">
-      <div class="container">  
-        <div class="nav-wrapper">
-        <a href="#"><div class="logo"><img src="images/logo.jpg"></div></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sherburn Eversley Cricket Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#">
+          <div class="logo"><img src="images/logo.jpg"></div>
+        </a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
           <ul aria-label="Primary" role="list" class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="https://secc.play-cricket.com/Matches?tab=Fixture&selected_season_id=258&seasonchange=t&fixture_month=1&season_id=258&season_id=258&team_id=&view_by=month&view_by=month&team_id=&search_in=&q%5Bcategory_id%5D=all&q%5Bgender_id%5D=all&home_or_away=both" target="_blank">Fixtures</a></li>
+            <li><a href="https://secc.play-cricket.com/Matches" target="_blank">Fixtures</a></li>
             <li><a href="https://maps.app.goo.gl/T51nTDfpZ25smAhB6" target="_blank">Find Us</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="sponsorship.html">Sponsorship</a></li>
             <li><a href="https://linktr.ee/sherburneversleycc" target="_blank">Contact</a></li>
           </ul>
         </nav>
-        <a button role = "link" href="https://secc.play-cricket.com/home" target="_blank" class="button | display-sm-none display-md-inline-flex">Play Cricket</button></a>
+        <a button role="link" href="https://secc.play-cricket.com/home" target="_blank"
+          class="button | display-sm-none display-md-inline-flex">Play Cricket</button></a>
       </div>
     </div>
-    </header>
-    <main>
-      <section class="hero | text-center-sm-only padding-block-900">
-        <div class="container">
-          <div class="even-columns">
-            <div class="flow">
-              <h1 class="font-size-primary-heading font-weight-bold">Sherburn Eversley Cricket Club Sponsorship</h1>
-              <p>The club are always looking for sponsorship to allow us to provide up to date facilities and equipment for our members. This will allow us to generate income and to perform to best of our abilities</p>
-              <a class="button" href="#inquiry-form-section">Sponsor Us!</a>
-            </div>
-            <div class="hero__image">
-                <div class="svg-container"><img class="mx-auto" src="images/emsleys-estate-agents-logo.svg" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sponsorship Packages Section -->
-      <section class="padding-block-900" style="background-color: var(--clr-neutral-100); border-radius: var(--size-200);">
-        <div class="container">
-          <div class="text-center flow">
-            <h2 class="font-size-secondary-heading font-weight-bold">Sponsorship Packages</h2>
-            <p data-width="wide" class="mx-auto">Choose a package that suits your goals and support our community club.</p>
-          </div>
-          
-          <div class="sponsorship-cards">
-            <!-- Matchball Card -->
-            <div class="sponsor-card">
-              <div class="sponsor-card__header">
-                <span class="sponsor-card__badge">Matchday</span>
-                <h3 class="sponsor-card__title">Matchball Sponsor</h3>
-                <div class="sponsor-card__price">£25 <span class="sponsor-card__price-period">/ match</span></div>
-              </div>
-              <ul class="sponsor-card__features">
-                <li class="sponsor-card__feature">Pre & post-match social media posts highlighting support (logo or name)</li>
-                <li class="sponsor-card__feature">Reaching up to 24,000 views per month</li>
-                <li class="sponsor-card__feature">Free drink at the Golden Duck bar on sponsored match day</li>
-              </ul>
-            </div>
-
-            <!-- Bronze Card -->
-            <div class="sponsor-card">
-              <div class="sponsor-card__header">
-                <span class="sponsor-card__badge">Bronze</span>
-                <h3 class="sponsor-card__title">Bronze Sponsor</h3>
-                <div class="sponsor-card__price">£100 <span class="sponsor-card__price-period">/ season</span></div>
-              </div>
-              <ul class="sponsor-card__features">
-                <li class="sponsor-card__feature">Social posts for 3 matches across the season</li>
-                <li class="sponsor-card__feature">Brand displayed in the bar & changing rooms</li>
-                <li class="sponsor-card__feature">Free drink at the Golden Duck bar on sponsored match days</li>
-              </ul>
-            </div>
-
-            <!-- Silver Card -->
-            <div class="sponsor-card">
-              <div class="sponsor-card__header">
-                <span class="sponsor-card__badge">Silver</span>
-                <h3 class="sponsor-card__title">Silver Sponsor</h3>
-                <div class="sponsor-card__price">£250 <span class="sponsor-card__price-period">/ season</span></div>
-              </div>
-              <ul class="sponsor-card__features">
-                <li class="sponsor-card__feature">25% discount on drinks and snacks at the Golden Duck Bar</li>
-                <li class="sponsor-card__feature">Social posts for 5 matches across the season</li>
-                <li class="sponsor-card__feature">Brand displayed in the bar & changing rooms</li>
-                <li class="sponsor-card__feature">Free drink at the Golden Duck bar on sponsored match days</li>
-              </ul>
-            </div>
-
-            <!-- Gold Card (Highlighted) -->
-            <div class="sponsor-card sponsor-card--highlighted">
-              <div class="sponsor-card__header">
-                <span class="sponsor-card__badge">Gold (Premium)</span>
-                <h3 class="sponsor-card__title">Gold Sponsor</h3>
-                <div class="sponsor-card__price">£1,000 <span class="sponsor-card__price-period">/ season</span></div>
-              </div>
-              <ul class="sponsor-card__features">
-                <li class="sponsor-card__feature">Brand displayed prominently on match kit</li>
-                <li class="sponsor-card__feature">Premier sponsor branding on website & Play Cricket page</li>
-                <li class="sponsor-card__feature">Framed match shirt with company logo</li>
-                <li class="sponsor-card__feature">25% discount on drinks and snacks at the Golden Duck Bar</li>
-                <li class="sponsor-card__feature">Matchball sponsor every month across the season</li>
-                <li class="sponsor-card__feature">Brand displayed prominently in bar & changing rooms</li>
-                <li class="sponsor-card__feature">Free drink at the Golden Duck bar on every match day</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Bespoke & Donations Section -->
-      <section class="padding-block-900">
-        <div class="container">
-          <div class="even-columns">
-            <div class="flow text-center-sm-only">
-              <h3 class="font-size-secondary-heading font-weight-bold">Bespoke Sponsorship</h3>
-              <p>If you'd like to support us with the purchase of specific equipment or specific club improvement projects, we're happy to work with you on tailored and bespoke sponsorship packages that suit your organization.</p>
-            </div>
-            <div class="flow text-center-sm-only">
-              <h3 class="font-size-secondary-heading font-weight-bold">Club Donations</h3>
-              <p>Want to make a no-strings-attached donation to support our community club? Any much-valued and appreciated donation will help keep our club sustainable for future generations.</p>
-              <a class="button" href="https://linktr.ee/sherburneversleycc" target="_blank">Make a Donation</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Form Section -->
-      <section class="sponsorship-form-section padding-block-900" id="inquiry-form-section">
-        <div class="container">
-          <div class="sponsorship-form-container text-center flow">
-            <h2 class="font-size-secondary-heading font-weight-bold">Sponsorship Inquiry Form</h2>
-            <p data-width="wide" class="mx-auto">Interested in sponsoring us or making an inquiry? Fill out the form below and we will get back to you shortly.</p>
-            
-            <div id="form-status" class="form-status"></div>
-            
-            <form id="sponsorship-form" class="sponsorship-form">
-              <div class="form-group">
-                <label for="sponsor-name" class="form-label">Your Name / Company Name *</label>
-                <input type="text" id="sponsor-name" name="name" class="form-control" placeholder="Enter your name or business name" required>
-              </div>
-              
-              <div class="even-columns" style="gap: var(--size-400);">
-                <div class="form-group">
-                  <label for="sponsor-email" class="form-label">Email Address *</label>
-                  <input type="email" id="sponsor-email" name="email" class="form-control" placeholder="name@example.com" required>
-                </div>
-                <div class="form-group">
-                  <label for="sponsor-phone" class="form-label">Phone Number</label>
-                  <input type="tel" id="sponsor-phone" name="phone" class="form-control" placeholder="e.g. 07123 456789">
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="sponsor-package" class="form-label">Select Package *</label>
-                <select id="sponsor-package" name="package" class="form-control" required>
-                  <option value="" disabled selected>Choose a package...</option>
-                  <option value="Matchball Sponsor - £25">Matchball Sponsor - £25</option>
-                  <option value="Bronze Sponsor - £100">Bronze Sponsor - £100</option>
-                  <option value="Silver Sponsor - £250">Silver Sponsor - £250</option>
-                  <option value="Gold Sponsor - £1000">Gold Sponsor - £1000</option>
-                  <option value="Bespoke/Other Package">Bespoke / Custom Package</option>
-                  <option value="Club Donation">Club Donation</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="sponsor-message" class="form-label">Message / Details</label>
-                <textarea id="sponsor-message" name="message" class="form-control" placeholder="Tell us more about how you'd like to support the club, any specific matches you'd like to sponsor, or other questions."></textarea>
-              </div>
-              
-              <button type="submit" class="button">Send Inquiry</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- Client-side email handling script -->
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const form = document.getElementById('sponsorship-form');
-          const statusDiv = document.getElementById('form-status');
-
-          if (form) {
-            form.addEventListener('submit', (event) => {
-              event.preventDefault();
-
-              const name = document.getElementById('sponsor-name').value;
-              const email = document.getElementById('sponsor-email').value;
-              const phone = document.getElementById('sponsor-phone').value || 'Not provided';
-              const pkg = document.getElementById('sponsor-package').value;
-              const message = document.getElementById('sponsor-message').value || 'No message details provided.';
-
-              // OPTION 1: Mailto approach (Default, zero setup required)
-              const recipient = 'secretary@sherburneversleycc.com';
-              const subject = `Sherburn Eversley CC Sponsorship Inquiry - ${pkg}`;
-              const emailBody = `Sponsorship Inquiry Details:\n\n` +
-                                `Name/Company: ${name}\n` +
-                                `Email: ${email}\n` +
-                                `Phone: ${phone}\n` +
-                                `Selected Package: ${pkg}\n\n` +
-                                `Message/Notes:\n${message}\n`;
-
-              const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-              
-              // Open the user's mail client
-              window.location.href = mailtoUrl;
-
-              // Show status message
-              statusDiv.className = 'form-status form-status--success';
-              statusDiv.innerHTML = 'Thank you! Your email client has been opened with your inquiry details. Please send the pre-filled email to complete your submission.';
-              statusDiv.style.display = 'block';
-
-              /*
-              // OPTION 2: Web3Forms (Silent submission in background)
-              // To use this, you need to sign up for a free key on web3forms.com and configure your form like this:
-              
-              statusDiv.className = 'form-status';
-              statusDiv.style.display = 'none';
-
-              const formData = new FormData();
-              formData.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY_HERE'); // Enter key here
-              formData.append('name', name);
-              formData.append('email', email);
-              formData.append('phone', phone);
-              formData.append('package', pkg);
-              formData.append('message', message);
-              formData.append('subject', `New Sponsorship Inquiry from ${name}`);
-              formData.append('to', 'secretary@sherburneversleycc.com');
-
-              fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-              })
-              .then(response => response.json())
-              .then(data => {
-                if (data.success) {
-                  statusDiv.className = 'form-status form-status--success';
-                  statusDiv.innerHTML = 'Thank you! Your sponsorship inquiry has been sent successfully.';
-                  statusDiv.style.display = 'block';
-                  form.reset();
-                } else {
-                  statusDiv.className = 'form-status form-status--error';
-                  statusDiv.innerHTML = 'Something went wrong. Please try again or email us directly.';
-                  statusDiv.style.display = 'block';
-                }
-              })
-              .catch(error => {
-                statusDiv.className = 'form-status form-status--error';
-                statusDiv.innerHTML = 'Network error. Please try again or email us directly.';
-                statusDiv.style.display = 'block';
-              });
-              */
-            });
-          }
-        });
-      </script>
-
-      <section class="sales-points | padding-block-900">
-        <div class="container">
-          <div class="even-columns">
-            <div class="sales-points__blog | flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
-              <h2 class="font-size-secondary-heading font-weight-bold">Our Sponsors</h2>
-              <p>We currently have a Club sponsor, Emsleys Estate Agents who have kindly sponsored us for over ten years now. This income allows us to keep our grounds equipment running! We also have various match ball sponsors who donate a minimum of £20 to cover the cost of the balls we use in a match. If you would like to be a match ball sponsor please get in touch.</p>
-            </div>
-            <div class="sales-points__blog | flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
-              <p>We have other opportunities for sponsorship such as live streaming. We have the option to live stream our home matches on Youtube but it comes with a cost of £500/year. If you would be keen to help us with this please let us know! <a href="https://youtu.be/GvrNzFOGyRc">Here is a demo</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta | margin-top-900 background-accent-400 text-neutral-100 padding-block-900">
-        <div class="container">
-          <div class="even-columns vertical-align-center">
-            <div>
-              <p class="font-size-primary-heading fw-bold">Find Your Place on the Pitch</p>
-            </div>
-            <div class="justify-self-end-md">
-              <a button role = "link" href="https://secc.play-cricket.com/home" target="_blank" class="button" data-type="inverted">Get Started</button></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-    </main>
-    <footer class="primary-footer | padding-block-700 background-neutral-900 text-neautral-100">
+  </header>
+  <main>
+    <section class="hero | text-center-sm-only padding-block-900">
       <div class="container">
-        <div class="primary-footer__wrapper">
-            <a class="primary-footer__logo" href="#" aria-label="home">
-              <img class="logo" src="images\Sherburn Eversley.svg" width-="116.75" height="46.25">
-            </a>
-            
-
-            <ul class="social-list" role="list" aria-label="Social links">
-              <li><a aria-label="facebook" href="https://www.facebook.com/SherburnEversleyCC">
-                  <svg class="social-icon">
-                    <use xlink:href="images/social-icons.svg#icon-facebook"></use>
-                  </svg></a>
-              </li>
-              <li><a aria-label="youtube" href="#">
-                  <svg class="social-icon">
-                    <use xlink:href="images/social-icons.svg#icon-youtube"></use>
-                  </svg></a>
-              </li>
-              <li><a aria-label="twitter" href="https://x.com/thesecc">
-                  <svg class="social-icon">
-                    <use xlink:href="images/social-icons.svg#icon-twitter"></use>
-                  </svg></a>
-              </li>
-              <li><a aria-label="pinterest" href="#">
-                  <svg class="social-icon">
-                    <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
-                  </svg></a>
-              </li>
-              <li><a aria-label="instagram" href="https://instagram.com/sherburneversleycricketclub">
-                  <svg class="social-icon">
-                    <use xlink:href="images/social-icons.svg#icon-instagram"></use>
-                  </svg></a>
-              </li>
-            </ul>
-         
-          <div class="primary-footer__nav-wrapper">
-            <nav class="footer-nav">
-              <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="https://secc.play-cricket.com/Matches?tab=Fixture&selected_season_id=258&seasonchange=t&fixture_month=1&season_id=258&season_id=258&team_id=&view_by=month&view_by=month&team_id=&search_in=&q%5Bcategory_id%5D=all&q%5Bgender_id%5D=all&home_or_away=both" target="_blank">Fixtures</a></li>
-                <li><a href="https://maps.app.goo.gl/T51nTDfpZ25smAhB6" target="_blank">Find Us</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Sponsorship</a></li>
-                <li><a href="https://linktr.ee/sherburneversleycc" target="_blank">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </nav>
+        <div class="even-columns">
+          <div class="flow">
+            <h1 class="font-size-primary-heading font-weight-bold">Sherburn Eversley Cricket Club Sponsorship</h1>
+            <p>The club are always looking for sponsorship to allow us to provide up to date facilities and equipment
+              for our members. This will allow us to generate income and to perform to best of our abilities</p>
+            <a class="button" href="#inquiry-form-section">Sponsor Us!</a>
           </div>
-          <!-- <div class="primary-footer-form"> -->
-            <form action="" class="primary-footer__form | action">
-              <input type="email">
-              <button class="button" data-shadow="none">Go</button>
-              
-            </form>
-            <p class="primary-footer__copyright">Copyright 2025. All Rights Reserved. All images courtesy of the Waddelove family</p>
+          <div class="hero__image">
+            <div class="svg-container"><img class="mx-auto" src="images/emsleys-estate-agents-logo.svg" alt=""></div>
           </div>
-        <!-- </div> -->
+        </div>
       </div>
-    </footer>
-    <script type="module" src="/main.js"></script>
-    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
-    
-  </body>
+    </section>
+
+    <!-- Sponsorship Packages Section -->
+    <section class="padding-block-900"
+      style="background-color: var(--clr-neutral-100); border-radius: var(--size-200);">
+      <div class="container">
+        <div class="text-center flow">
+          <h2 class="font-size-secondary-heading font-weight-bold">Sponsorship Packages</h2>
+          <p data-width="wide" class="mx-auto">Choose a package that suits your goals and support our community club.
+          </p>
+        </div>
+
+        <div class="sponsorship-cards">
+          <!-- Matchball Card -->
+          <div class="sponsor-card">
+            <div class="sponsor-card__header">
+              <span class="sponsor-card__badge">Matchday</span>
+              <h3 class="sponsor-card__title">Matchball Sponsor</h3>
+              <div class="sponsor-card__price">£25 <span class="sponsor-card__price-period">/ match</span></div>
+            </div>
+            <ul class="sponsor-card__features">
+              <li class="sponsor-card__feature">Pre & post-match social media posts highlighting support (logo or name)
+              </li>
+              <li class="sponsor-card__feature">Reaching up to 24,000 views per month</li>
+              <li class="sponsor-card__feature">Free drink at the Golden Duck bar on sponsored match day</li>
+            </ul>
+          </div>
+
+          <!-- Bronze Card -->
+          <div class="sponsor-card">
+            <div class="sponsor-card__header">
+              <span class="sponsor-card__badge">Bronze</span>
+              <h3 class="sponsor-card__title">Bronze Sponsor</h3>
+              <div class="sponsor-card__price">£100 <span class="sponsor-card__price-period">/ season</span></div>
+            </div>
+            <ul class="sponsor-card__features">
+              <li class="sponsor-card__feature">Social posts for 3 matches across the season</li>
+              <li class="sponsor-card__feature">Brand displayed in the bar & changing rooms</li>
+              <li class="sponsor-card__feature">Free drink at the Golden Duck bar on sponsored match days</li>
+            </ul>
+          </div>
+
+          <!-- Silver Card -->
+          <div class="sponsor-card">
+            <div class="sponsor-card__header">
+              <span class="sponsor-card__badge">Silver</span>
+              <h3 class="sponsor-card__title">Silver Sponsor</h3>
+              <div class="sponsor-card__price">£250 <span class="sponsor-card__price-period">/ season</span></div>
+            </div>
+            <ul class="sponsor-card__features">
+              <li class="sponsor-card__feature">25% discount on drinks and snacks at the Golden Duck Bar</li>
+              <li class="sponsor-card__feature">Social posts for 5 matches across the season</li>
+              <li class="sponsor-card__feature">Brand displayed in the bar & changing rooms</li>
+              <li class="sponsor-card__feature">Free drink at the Golden Duck bar on sponsored match days</li>
+            </ul>
+          </div>
+
+          <!-- Gold Card (Highlighted) -->
+          <div class="sponsor-card sponsor-card--highlighted">
+            <div class="sponsor-card__header">
+              <span class="sponsor-card__badge">Gold (Premium)</span>
+              <h3 class="sponsor-card__title">Gold Sponsor</h3>
+              <div class="sponsor-card__price">£1,000 <span class="sponsor-card__price-period">/ season</span></div>
+            </div>
+            <ul class="sponsor-card__features">
+              <li class="sponsor-card__feature">Brand displayed prominently on match kit</li>
+              <li class="sponsor-card__feature">Premier sponsor branding on website & Play Cricket page</li>
+              <li class="sponsor-card__feature">Framed match shirt with company logo</li>
+              <li class="sponsor-card__feature">25% discount on drinks and snacks at the Golden Duck Bar</li>
+              <li class="sponsor-card__feature">Matchball sponsor every month across the season</li>
+              <li class="sponsor-card__feature">Brand displayed prominently in bar & changing rooms</li>
+              <li class="sponsor-card__feature">Free drink at the Golden Duck bar on every match day</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bespoke & Donations Section -->
+    <section class="padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div class="flow text-center-sm-only">
+            <h3 class="font-size-secondary-heading font-weight-bold">Bespoke Sponsorship</h3>
+            <p>If you'd like to support us with the purchase of specific equipment or specific club improvement
+              projects, we're happy to work with you on tailored and bespoke sponsorship packages that suit your
+              organization.</p>
+          </div>
+          <div class="flow text-center-sm-only">
+            <h3 class="font-size-secondary-heading font-weight-bold">Club Donations</h3>
+            <p>Want to make a no-strings-attached donation to support our community club? Any much-valued and
+              appreciated donation will help keep our club sustainable for future generations.</p>
+            <a class="button" href="https://linktr.ee/sherburneversleycc" target="_blank">Make a Donation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="sponsorship-form-section padding-block-900" id="inquiry-form-section">
+      <div class="container">
+        <div class="sponsorship-form-container text-center flow">
+          <h2 class="font-size-secondary-heading font-weight-bold">Sponsorship Inquiry Form</h2>
+          <p data-width="wide" class="mx-auto">Interested in sponsoring us or making an inquiry? Fill out the form below
+            and we will get back to you shortly.</p>
+
+          <div id="form-status" class="form-status"></div>
+
+          <form id="sponsorship-form" class="sponsorship-form">
+            <div class="form-group">
+              <label for="sponsor-name" class="form-label">Your Name / Company Name *</label>
+              <input type="text" id="sponsor-name" name="name" class="form-control"
+                placeholder="Enter your name or business name" required>
+            </div>
+
+            <div class="even-columns" style="gap: var(--size-400);">
+              <div class="form-group">
+                <label for="sponsor-email" class="form-label">Email Address *</label>
+                <input type="email" id="sponsor-email" name="email" class="form-control" placeholder="name@example.com"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="sponsor-phone" class="form-label">Phone Number</label>
+                <input type="tel" id="sponsor-phone" name="phone" class="form-control" placeholder="e.g. 07123 456789">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="sponsor-package" class="form-label">Select Package *</label>
+              <select id="sponsor-package" name="package" class="form-control" required>
+                <option value="" disabled selected>Choose a package...</option>
+                <option value="Matchball Sponsor - £25">Matchball Sponsor - £25</option>
+                <option value="Bronze Sponsor - £100">Bronze Sponsor - £100</option>
+                <option value="Silver Sponsor - £250">Silver Sponsor - £250</option>
+                <option value="Gold Sponsor - £1000">Gold Sponsor - £1000</option>
+                <option value="Bespoke/Other Package">Bespoke / Custom Package</option>
+                <option value="Club Donation">Club Donation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="sponsor-message" class="form-label">Message / Details</label>
+              <textarea id="sponsor-message" name="message" class="form-control"
+                placeholder="Tell us more about how you'd like to support the club, any specific matches you'd like to sponsor, or other questions."></textarea>
+            </div>
+
+            <button type="submit" class="button">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client-side email handling script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('sponsorship-form');
+        const statusDiv = document.getElementById('form-status');
+
+        if (form) {
+          form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('sponsor-name').value;
+            const email = document.getElementById('sponsor-email').value;
+            const phone = document.getElementById('sponsor-phone').value || 'Not provided';
+            const pkg = document.getElementById('sponsor-package').value;
+            const message = document.getElementById('sponsor-message').value || 'No message details provided.';
+
+            // OPTION 1: Mailto approach (Default, zero setup required)
+            const recipient = 'secretary@sherburneversleycc.com';
+            const subject = `Sherburn Eversley CC Sponsorship Inquiry - ${pkg}`;
+            const emailBody = `Sponsorship Inquiry Details:\n\n` +
+              `Name/Company: ${name}\n` +
+              `Email: ${email}\n` +
+              `Phone: ${phone}\n` +
+              `Selected Package: ${pkg}\n\n` +
+              `Message/Notes:\n${message}\n`;
+
+            const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+            // Open the user's mail client
+            window.location.href = mailtoUrl;
+
+            // Show status message
+            statusDiv.className = 'form-status form-status--success';
+            statusDiv.innerHTML = 'Thank you! Your email client has been opened with your inquiry details. Please send the pre-filled email to complete your submission.';
+            statusDiv.style.display = 'block';
+
+            /*
+            // OPTION 2: Web3Forms (Silent submission in background)
+            // To use this, you need to sign up for a free key on web3forms.com and configure your form like this:
+            
+            statusDiv.className = 'form-status';
+            statusDiv.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY_HERE'); // Enter key here
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('package', pkg);
+            formData.append('message', message);
+            formData.append('subject', `New Sponsorship Inquiry from ${name}`);
+            formData.append('to', 'secretary@sherburneversleycc.com');
+
+            fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.success) {
+                statusDiv.className = 'form-status form-status--success';
+                statusDiv.innerHTML = 'Thank you! Your sponsorship inquiry has been sent successfully.';
+                statusDiv.style.display = 'block';
+                form.reset();
+              } else {
+                statusDiv.className = 'form-status form-status--error';
+                statusDiv.innerHTML = 'Something went wrong. Please try again or email us directly.';
+                statusDiv.style.display = 'block';
+              }
+            })
+            .catch(error => {
+              statusDiv.className = 'form-status form-status--error';
+              statusDiv.innerHTML = 'Network error. Please try again or email us directly.';
+              statusDiv.style.display = 'block';
+            });
+            */
+          });
+        }
+      });
+    </script>
+
+    <section class="sales-points | padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div class="sales-points__blog | flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
+            <h2 class="font-size-secondary-heading font-weight-bold">Our Sponsors</h2>
+            <p>We currently have a Club sponsor, Emsleys Estate Agents who have kindly sponsored us for over ten years
+              now. This income allows us to keep our grounds equipment running! We also have various match ball sponsors
+              who donate a minimum of £25 to cover the cost of the balls we use in a match. If you would like to be a
+              match ball sponsor please get in touch.</p>
+          </div>
+          <div class="sales-points__blog | flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
+            <p>We have other opportunities for sponsorship such as live streaming. We have the option to live stream our
+              home matches on Youtube but it comes with a cost of £500/year. If you would be keen to help us with this
+              please let us know! <a href="https://youtu.be/GvrNzFOGyRc">Here is a demo</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta | margin-top-900 background-accent-400 text-neutral-100 padding-block-900">
+      <div class="container">
+        <div class="even-columns vertical-align-center">
+          <div>
+            <p class="font-size-primary-heading fw-bold">Find Your Place on the Pitch</p>
+          </div>
+          <div class="justify-self-end-md">
+            <a button role="link" href="https://secc.play-cricket.com/home" target="_blank" class="button"
+              data-type="inverted">Get Started</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="primary-footer | padding-block-700 background-neutral-900 text-neautral-100">
+    <div class="container">
+      <div class="primary-footer__wrapper">
+        <a class="primary-footer__logo" href="#" aria-label="home">
+          <img class="logo" src="images\Sherburn Eversley.svg" width-="116.75" height="46.25">
+        </a>
+
+
+        <ul class="social-list" role="list" aria-label="Social links">
+          <li><a aria-label="facebook" href="https://www.facebook.com/SherburnEversleyCC">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="youtube" href="#">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="twitter" href="https://x.com/thesecc">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="pinterest" href="#">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="instagram" href="https://instagram.com/sherburneversleycricketclub">
+              <svg class="social-icon">
+                <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+              </svg></a>
+          </li>
+        </ul>
+
+        <div class="primary-footer__nav-wrapper">
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="https://secc.play-cricket.com/Matches" target="_blank">Fixtures</a></li>
+              <li><a href="https://maps.app.goo.gl/T51nTDfpZ25smAhB6" target="_blank">Find Us</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Sponsorship</a></li>
+              <li><a href="https://linktr.ee/sherburneversleycc" target="_blank">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="primary-footer-form"> -->
+        <form action="" class="primary-footer__form | action">
+          <input type="email">
+          <button class="button" data-shadow="none">Go</button>
+
+        </form>
+        <p class="primary-footer__copyright">Copyright 2025. All Rights Reserved. All images courtesy of the Waddelove
+          family</p>
+      </div>
+      <!-- </div> -->
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+
+</body>
+
 </html>
